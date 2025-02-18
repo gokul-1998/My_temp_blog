@@ -1,0 +1,1 @@
+- to install ffmpeg in windows https://phoenixnap.com/kb/ffmpeg-windows
