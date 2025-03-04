@@ -28,6 +28,10 @@ sudo apt install pgadmin4-web
 # Configure the webserver, if you installed pgadmin4-web:
 sudo /usr/pgadmin4/bin/setup-web.sh
 ```
+- `sudo apt-get install postgresql`
+- `sudo -u postgres psql postgres`
+- `ALTER USER postgres WITH PASSWORD 'password';`
 
 # to set up password to postgres
   - https://stackoverflow.com/questions/12720967/how-can-i-change-a-postgresql-user-password
+
