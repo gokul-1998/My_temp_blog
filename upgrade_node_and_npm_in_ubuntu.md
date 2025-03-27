@@ -1,5 +1,16 @@
-curl https://raw.githubusercontent.com/creationix/nvm/master/install.sh | bash
-source ~/.nvm/nvm.sh
+```
+# Download and install NVM
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/master/install.sh | bash
+
+# Reload shell configuration
+export NVM_DIR="$HOME/.nvm"
+. "$NVM_DIR/nvm.sh"
+
+# Install the latest LTS version of Node.js
 nvm install --lts
 nvm use --lts
-npm --version
+
+# Verify installation
+node -v
+npm -v
+```
