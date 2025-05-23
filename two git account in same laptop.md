@@ -114,3 +114,5 @@ Git automatically uses the appropriate SSH key based on the `Host` in the `~/.ss
 ---
 
 Now, you can work with both GitHub accounts seamlessly on the same machine!
+
+- `gh auth switch` - to change accounts
