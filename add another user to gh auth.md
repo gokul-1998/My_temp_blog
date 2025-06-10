@@ -1,0 +1,1 @@
+- gh auth login --hostname github.com
