@@ -1,0 +1,4 @@
+- public repo
+  - `gh repo create graphana_loki_journal_log_dashboard --public --source=. --remote=origin --push`
+- private repo
+  - `gh repo create my-new-repo --private --source=. --remote=origin --push`
