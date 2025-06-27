@@ -1,3 +1,5 @@
+# https://askubuntu.com/questions/1156409/conflicting-values-set-for-option-signed-by-regarding-source
+ 
  sudo apt  update
 [sudo] password for gokul: 
 Sorry, try again.
@@ -98,4 +100,5 @@ Building dependency tree... Done
 Reading state information... Done
 154 packages can be upgraded. Run 'apt list --upgradable' to see them.
 gokul@gokul-Latitude-E7250:/etc/apt/sources.list.d$ 
+
 
