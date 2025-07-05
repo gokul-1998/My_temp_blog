@@ -1,0 +1,2 @@
+- How to list all the folder along with their sizes , ordered by their size?
+- `sudo du -sh .[!.]* * | sort -rh`
