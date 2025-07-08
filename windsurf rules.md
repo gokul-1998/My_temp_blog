@@ -1,0 +1,1 @@
+- https://windsurf.com/editor/directory
