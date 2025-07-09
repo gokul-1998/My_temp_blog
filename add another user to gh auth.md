@@ -1,6 +1,6 @@
 # note : gh needs to be installed via apt and not snap. if you install via snap it wont work
 - https://github.com/cli/cli/issues/4351
-
+```bash
 # Remove old version
 sudo apt remove gh
 
@@ -17,6 +17,7 @@ sudo tee /etc/apt/sources.list.d/github-cli.list > /dev/null
 # Update package list and install latest `gh`
 sudo apt update
 sudo apt install gh
+```
 
 - to uninstall if you installed via snap, 
 
