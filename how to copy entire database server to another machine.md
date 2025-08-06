@@ -164,3 +164,48 @@ ALTER DEFAULT PRIVILEGES IN SCHEMA public
 GRANT ALL ON TABLES TO user;
 ```
 
+
+To grant privileges on **all databases** to a user (e.g., `gokul`), you’ll need to **loop through each database** and run the grant statements inside each one, because PostgreSQL executes most grants in the context of a specific database.
+
+---
+
+### ✅ Method: Use a Bash loop (as `postgres` user)
+
+Here's a complete way to do this in Bash:
+
+```bash
+sudo -i -u postgres
+```
+
+Then run:
+
+```bash
+for db in $(psql -At -c "SELECT datname FROM pg_database WHERE datistemplate = false;"); do
+  echo "Granting on database: $db"
+  psql "$db" -c "GRANT ALL PRIVILEGES ON DATABASE \"$db\" TO gokul;"
+  psql "$db" -c "GRANT ALL PRIVILEGES ON ALL TABLES IN SCHEMA public TO gokul;"
+  psql "$db" -c "GRANT ALL PRIVILEGES ON ALL SEQUENCES IN SCHEMA public TO gokul;"
+  psql "$db" -c "GRANT ALL ON SCHEMA public TO gokul_articence;"
+  psql "$db" -c "ALTER DEFAULT PRIVILEGES IN SCHEMA public GRANT ALL ON TABLES TO gokul;"
+done
+```
+
+---
+
+### 🧠 What this does:
+
+* Loops through all **non-template** databases.
+* Executes all the grant commands in each database.
+
+---
+
+### 🛑 Notes:
+
+* Make sure `gokul_articence` exists on the server before running this.
+* If your tables use **non-public schemas**, adjust `public` to your schema name.
+* If you want to give **read-only** instead of full privileges, use `SELECT` instead of `ALL PRIVILEGES`.
+
+---
+
+Let me know if you'd like a read-only version of this or want to target only specific databases.
+
