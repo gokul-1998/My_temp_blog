@@ -2,8 +2,7 @@
 - paste the below command in the file
 ```
 gai_commit() {
-   local GEMINI_CLI="$HOME/gemini.sh"
-
+  local GEMINI_CLI="/home/gokul_articence/gemini.sh"
 
   if ! git diff --cached --quiet; then
     echo "🔍 Generating commit message using Gemini..."
@@ -14,7 +13,7 @@ gai_commit() {
 
     # Prompt Gemini for commit message
     local prompt
-    prompt="Generate a concise, single-line conventional commit message under 15 words for the following git diff. Do not add any ext>
+    prompt="Generate a concise, single-line conventional commit message under 15 words for the following git diff. Do not add any extra description or bullet points. Example: 'feat: add user authentication'. Here is the diff:\n\n$diff_text"
 
     local commit_msg
     commit_msg=$(echo -e "$prompt" | "$GEMINI_CLI")
@@ -35,7 +34,6 @@ gai_commit() {
     echo "⚠️ No staged changes to commit."
   fi
 }
-
 ```
 - `source ~/.bashrc`
 - `nano $HOME/gemini.sh`
