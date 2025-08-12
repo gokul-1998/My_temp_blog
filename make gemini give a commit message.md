@@ -2,8 +2,7 @@
 - paste the below command in the file
 ```
 gai_commit() {
-  local GEMINI_CLI="/home/gokul_articence/gemini.sh"
-
+  local GEMINI_CLI="$HOME/gemini.sh"
   if ! git diff --cached --quiet; then
     echo "🔍 Generating commit message using Gemini..."
 
