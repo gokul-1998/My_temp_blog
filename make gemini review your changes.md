@@ -108,3 +108,9 @@ if __name__ == "__main__":
 ```
 # step 3
 - create a .env and add GOOGLE_API_KEY in it
+
+# step 4
+- `chmod +x .git/hooks/pre-commit`
+
+# step 5
+- `pip install google.generativeai`
