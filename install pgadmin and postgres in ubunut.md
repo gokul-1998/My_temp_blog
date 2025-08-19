@@ -32,6 +32,10 @@ sudo /usr/pgadmin4/bin/setup-web.sh
 - `sudo -u postgres psql postgres`
 - `ALTER USER postgres WITH PASSWORD 'password';`
 
+# the above one causes trouble, so use the below one, 
+https://medium.com/yavar/install-and-configure-postgresql-and-pgadmin-on-ubuntu-20-04-22-04-52c52c249b9e
+
+
 # to set up password to postgres
   - https://stackoverflow.com/questions/12720967/how-can-i-change-a-postgresql-user-password
 
