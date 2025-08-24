@@ -1,3 +1,4 @@
+```
  history
     1  ls
     2  df -h
@@ -47,4 +48,5 @@
    46  sudo firewall-cmd --zone=public --permanent --add-port=80/tcp
    47  sudo firewall-cmd --reload
    48  history
-ubuntu@instance-20250824-0855:~$ 
+ubuntu@instance-20250824-0855:~$
+```
