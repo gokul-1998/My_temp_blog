@@ -57,7 +57,7 @@ json_payload=$(jq -n --arg prompt "$prompt" \
 }')
 
 response=$(curl -s -X POST \
-  "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key=${API_KEY}" \
+  "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-lite:generateContent?key=${API_KEY}" \
   -H "Content-Type: application/json" \
   -d "$json_payload"
 )
