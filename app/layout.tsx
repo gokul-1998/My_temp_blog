@@ -4,8 +4,11 @@ import Link from 'next/link';
 import ThemeToggle from '@/components/ThemeToggle';
 
 export const metadata: Metadata = {
-  title: "My Tech Blog",
+  title: "Technical Knowledge Base",
   description: "A collection of technical notes and tutorials",
+  icons: {
+    icon: '/logo-light.png',
+  },
 };
 
 export default function RootLayout({
@@ -35,7 +38,11 @@ export default function RootLayout({
         <header>
           <div className="container">
             <div className="nav-inner">
-              <Link href="/" className="logo">MyTechBlog</Link>
+              <Link href="/" className="logo-container">
+                <img src="/logo-light.png" alt="Logo" className="nav-logo logo-light" />
+                <img src="/logo-dark.png" alt="Logo" className="nav-logo logo-dark" />
+                <span className="logo-text">TechKnowledge</span>
+              </Link>
               <nav className="nav-links">
                 <Link href="/" className="nav-link">Home</Link>
                 <Link href="/about" className="nav-link">About</Link>
