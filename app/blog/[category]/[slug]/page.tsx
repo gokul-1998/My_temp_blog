@@ -28,10 +28,10 @@ export default async function PostPage(props: { params: Promise<{ category: stri
         const post = await getPostBySlug(category, fileName);
 
         return (
-            <article className="animate-in">
+            <article className="animate">
                 <header className="post-header">
                     <div className="container">
-                        <div className="post-category">{category.replace('_', ' ')}</div>
+                        <span className="post-category-tag">{category.replace('_', ' ')}</span>
                         <h1>{post.title}</h1>
                         <div className="post-date">{format(new Date(post.date), 'MMMM dd, yyyy')}</div>
                     </div>
