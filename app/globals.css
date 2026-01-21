@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@400;500;600;700&display=swap');
 
 :root {
+  /* Dark Theme (Default) */
   --background: #0a0a0c;
   --foreground: #f0f0f2;
   --accent: #3a86ff;
@@ -11,6 +12,18 @@
   --nav-bg: rgba(10, 10, 12, 0.8);
   --font-main: 'Inter', sans-serif;
   --font-heading: 'Outfit', sans-serif;
+  --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+[data-theme='light'] {
+  --background: #f8f9fa;
+  --foreground: #1a1a1e;
+  --accent: #2563eb;
+  --accent-secondary: #7c3aed;
+  --card-bg: #ffffff;
+  --card-border: rgba(0, 0, 0, 0.08);
+  --muted: #64748b;
+  --nav-bg: rgba(248, 249, 250, 0.8);
 }
 
 * {
@@ -30,6 +43,7 @@ body {
   color: var(--foreground);
   font-family: var(--font-main);
   line-height: 1.6;
+  transition: background 0.3s ease, color 0.3s ease;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -216,4 +230,22 @@ header {
 
 .animate-in {
   animation: fadeIn 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Theme Toggle Button */
+.theme-toggle {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  color: var(--foreground);
+  padding: 0.5rem;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: var(--transition);
+}
+
+.theme-toggle:hover {
+  background: var(--card-border);
 }

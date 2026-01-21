@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Link from 'next/link';
+import ThemeToggle from '@/components/ThemeToggle';
 
 export const metadata: Metadata = {
   title: "My Tech Blog",
@@ -22,6 +23,7 @@ export default function RootLayout({
               <nav className="nav-links">
                 <Link href="/" className="nav-link">Home</Link>
                 <Link href="/about" className="nav-link">About</Link>
+                <ThemeToggle />
               </nav>
             </div>
           </div>
