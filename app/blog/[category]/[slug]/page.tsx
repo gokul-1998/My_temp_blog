@@ -1,6 +1,7 @@
 import { getPostBySlug, getPostSlugs, getCategories } from '@/lib/markdown';
 import { notFound } from 'next/navigation';
 import { format } from 'date-fns';
+import PostActions from '@/components/PostActions';
 
 export async function generateStaticParams() {
     const categories = getCategories();
@@ -31,9 +32,14 @@ export default async function PostPage(props: { params: Promise<{ category: stri
             <article className="animate">
                 <header className="post-header">
                     <div className="container">
-                        <span className="post-category-tag">{category.replace('_', ' ')}</span>
-                        <h1>{post.title}</h1>
-                        <div className="post-date">{format(new Date(post.date), 'MMMM dd, yyyy')}</div>
+                        <div className="post-header-inner">
+                            <div className="post-header-info">
+                                <span className="post-category-tag">{category.replace('_', ' ')}</span>
+                                <h1>{post.title}</h1>
+                                <div className="post-date">{format(new Date(post.date), 'MMMM dd, yyyy')}</div>
+                            </div>
+                            <PostActions slug={decodedSlug} category={category} />
+                        </div>
                     </div>
                 </header>
 
