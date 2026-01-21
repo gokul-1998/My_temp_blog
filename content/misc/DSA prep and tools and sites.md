@@ -1,5 +1,5 @@
 - add the leetcode contest to calendar
-  - https://leetcode.com/discuss/post/963277/i-wrote-a-script-to-generate-subscribabl-dpwr/
-- https://codeclock.in/
-    - app to remind about platform contests
+  - <https://leetcode.com/discuss/post/963277/i-wrote-a-script-to-generate-subscribabl-dpwr/>
+- <https://codeclock.in/>
+  - app to remind about platform contests
 -more websites and all contests like codejam, hashcode, fb hackercup, icpc, microsoft and samsung contests

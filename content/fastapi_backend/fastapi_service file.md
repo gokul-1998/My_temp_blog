@@ -71,7 +71,7 @@ journalctl -u fastapi-app.service -f
 
 ---
 
-### ✅ Your FastAPI app will now:
+### ✅ Your FastAPI app will now
 
 * Automatically start on boot
 * Restart if it crashes
@@ -79,9 +79,9 @@ journalctl -u fastapi-app.service -f
 
 Let me know if you’re using `gunicorn` or `docker` and I’ll adapt it accordingly.
 
-
-TLDR : 
+TLDR :
 Example Fastapi_app.service
+
 ```
 [Unit]
 Description=FastAPI app with Uvicorn

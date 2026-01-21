@@ -96,7 +96,7 @@ Older but still usable.
 
 If Redis is on a **production server**, do **NOT** expose port `6379` publicly.
 
-### Safer options:
+### Safer options
 
 #### 🔐 Option A: SSH Tunnel
 
@@ -146,4 +146,4 @@ If you want, tell me:
 
 I can give you a **step-by-step setup tailored to your server**.
 
-- https://chatgpt.com/share/69521cef-ce28-8011-91ab-57c42712d93f
+* <https://chatgpt.com/share/69521cef-ce28-8011-91ab-57c42712d93f>

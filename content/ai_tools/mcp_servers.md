@@ -1,1 +1,1 @@
-- https://github.com/modelcontextprotocol/servers
+- <https://github.com/modelcontextprotocol/servers>

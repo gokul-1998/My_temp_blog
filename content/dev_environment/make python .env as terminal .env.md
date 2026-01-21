@@ -1,6 +1,5 @@
 <img width="731" height="768" alt="image" src="https://github.com/user-attachments/assets/31fa6aad-a14c-405e-9654-e8627771ad9a" />
 
-
 Did you mean: An environment file is configured but terminal environment injection is disabled. Enable "python.terminal.sEndFile" to use environment variables from .env files in terminals.
 
 AI Overview

@@ -1,6 +1,5 @@
 
-https://chatgpt.com/share/68a97a0d-e0a8-8008-a7c4-eb34db8b5a9a
-
+<https://chatgpt.com/share/68a97a0d-e0a8-8008-a7c4-eb34db8b5a9a>
 
 Vercel is failing your build because **TypeScript + ESLint checks are running during `next build`**.
 If you just want to **skip linting/type-checking in Vercel**, you have a few options:

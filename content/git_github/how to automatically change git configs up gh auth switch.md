@@ -1,8 +1,8 @@
 
-
-https://chatgpt.com/share/688e138d-30e0-8007-b96f-37d59f9b486a
+<https://chatgpt.com/share/688e138d-30e0-8007-b96f-37d59f9b486a>
 
 - `nano ~/.gitconfig`
+
 ```
 [credential "https://github.com"]
         helper =
@@ -25,6 +25,7 @@ https://chatgpt.com/share/688e138d-30e0-8007-b96f-37d59f9b486a
 ```
 
 - `nano ~/.gitconfig-personal`
+
 ```
 [user]
     name = gokul
@@ -32,4 +33,5 @@ https://chatgpt.com/share/688e138d-30e0-8007-b96f-37d59f9b486a
 ```
 
 # no user should be there in the mail config file, if present it will throw error
+
 - you can check it by running `git config user.name` inside the git repository

@@ -1,1 +1,1 @@
- - use `git bisect` command
+- use `git bisect` command

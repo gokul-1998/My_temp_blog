@@ -31,7 +31,7 @@ root@debian-s-1vcpu-2gb-blr1-01:~# history
    30  sed -i 's/#AST_GROUP=.*/AST_GROUP=asterisk/' /etc/default/asterisk
    31  systemctl restart asterisk
    32  cd /usr/src
-   33  wget https://mirror.freepbx.org/modules/packages/freepbx/freepbx-17.0-latest.tgz
+   33  wget <https://mirror.freepbx.org/modules/packages/freepbx/freepbx-17.0-latest.tgz>
    34  tar xfz freepbx-17.0-latest.tgz
    35  cd freepbx
    36  chown -R asterisk:asterisk /var/www/html
@@ -71,7 +71,7 @@ root@debian-s-1vcpu-2gb-blr1-01:~# history
    70  systemctl status httpd
    71  systemctl start httpd
    72  nano /etc/asterisk/http.conf
-   73  nano /etc/asterisk/http_custom.conf 
+   73  nano /etc/asterisk/http_custom.conf
    74  /etc/asterisk/manager.conf
    75  nano /etc/asterisk/manager.conf
    76  firewall-cmd --add-port=8088/tcp --permanent
@@ -234,7 +234,7 @@ root@debian-s-1vcpu-2gb-blr1-01:~# history
   233  /etc/php-fpm.d/www.conf
   234  nano /etc/php-fpm.d/www.conf
   235  sudo nano /etc/php-fpm.d/www.conf
-  236  sudo find /etc/php* -name "www.conf"
+  236  sudo find /etc/php*-name "www.conf"
   237  php -v
   238  dpkg -l | grep php
   239  systemctl list-units | grep fpm
@@ -248,7 +248,7 @@ root@debian-s-1vcpu-2gb-blr1-01:~# history
   247  sudo chown -R asterisk:asterisk /var/www/html /var/lib/asterisk /etc/asterisk
   248  export APACHE_RUN_USER=asterisk
   249  export APACHE_RUN_GROUP=asterisk
-  250  grep APACHE_RUN_ /etc/apache2/envvars
+  250  grep APACHE_RUN_/etc/apache2/envvars
   251  sudo systemctl restart apache2
   252  # Connect via SSH
   253  ssh root@your-freepbx-ip
@@ -261,11 +261,11 @@ root@debian-s-1vcpu-2gb-blr1-01:~# history
   260  # Edit the file
   261  nano /etc/asterisk/ari.conf
   262  chmod 644 /etc/asterisk/ari.conf
-  263  cat /etc/asterisk/ari.conf 
+  263  cat /etc/asterisk/ari.conf
   264  chmod 644 /etc/asterisk/ari.conf
   265  chown asterisk:asterisk /etc/asterisk/ari.conf
-  266  nano /etc/asterisk/ari.conf 
-  267  cat /etc/asterisk/ari.conf 
+  266  nano /etc/asterisk/ari.conf
+  267  cat /etc/asterisk/ari.conf
   268  asterisk -rx "ari reload"
   269  asterisk -rx "core reload"
   270  asterisk -rx "module reload res_ari.so"
@@ -278,12 +278,12 @@ root@debian-s-1vcpu-2gb-blr1-01:~# history
   277  sudo systemctl status asterisk
   278  asterisk -rx "http show status"Retry
   279  asterisk -rx "http show status"
-  280  curl -u asterisk:your_password http://127.0.0.1:8088/ari/asterisk/info
+  280  curl -u asterisk:your_password <http://127.0.0.1:8088/ari/asterisk/info>
   281  sudo cat /etc/asterisk/http.conf
   282  sudo cat /etc/asterisk/http_additional.conf
   283  sudo nano /etc/asterisk/http_additional.conf
   284  y
   285  asterisk -rx "module reload res_http.so"
-  286  curl -u asterisk:your_password http://127.0.0.1:8088/ari/asterisk/info
+  286  curl -u asterisk:your_password <http://127.0.0.1:8088/ari/asterisk/info>
   287  history
-root@debian-s-1vcpu-2gb-blr1-01:~# 
+root@debian-s-1vcpu-2gb-blr1-01:~#

@@ -126,6 +126,13 @@ header {
   height: 32px;
   width: auto;
   border-radius: 6px;
+  mix-blend-mode: color-dodge;
+  /* Removes dark backgrounds for Dark Mode */
+}
+
+[data-theme='light'] .nav-logo {
+  mix-blend-mode: multiply;
+  /* Removes white backgrounds for Light Mode */
 }
 
 /* Theme-aware logos */

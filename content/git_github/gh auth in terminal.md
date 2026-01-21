@@ -4,9 +4,11 @@
 You're being prompted for credentials because Git needs authentication. Here are a few ways to handle this:
 
 ## Option 1: Enter credentials directly
+
 Just type your GitHub username, press Enter, then enter your **Personal Access Token** (not your password—GitHub no longer accepts passwords for HTTPS).
 
 ## Option 2: Use SSH instead (recommended)
+
 Switch to SSH authentication so you don't have to enter credentials each time:
 
 ```bash
@@ -16,6 +18,7 @@ git remote set-url origin git@github.com:USERNAME/REPO.git
 You'll need to set up an SSH key first if you haven't.
 
 ## Option 3: Cache your credentials
+
 Store your credentials so Git remembers them:
 
 ```bash
@@ -25,12 +28,15 @@ git config --global credential.helper store
 Then pull once, enter your credentials, and they'll be saved.
 
 Or use a temporary cache (15 minutes by default):
+
 ```bash
 git config --global credential.helper cache
 ```
 
 ## Option 4: Use GitHub CLI
+
 If you have `gh` installed:
+
 ```bash
 gh auth login
 ```

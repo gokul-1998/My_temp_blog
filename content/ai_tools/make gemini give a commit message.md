@@ -1,5 +1,6 @@
 - `sudo nano ~/.bashrc`
 - paste the below command in the file
+
 ```
 gai_commit() {
   local GEMINI_CLI="$HOME/gemini.sh"
@@ -34,8 +35,10 @@ gai_commit() {
   fi
 }
 ```
+
 - `source ~/.bashrc`
 - `nano $HOME/gemini.sh`
+
 ```bash gemini.sh (add your api key)
 #!/bin/bash
 
@@ -70,6 +73,7 @@ echo "$response" | jq -r '.candidates[0].content.parts[0].text' 2>/dev/null
 
 
 ```
+
 ```
 chmod +x ~/gemini.sh`
 sudo apt update && sudo apt install jq

@@ -133,7 +133,6 @@ A full web app to track DevRel activities, attribution, KPIs, and ROI across con
 
 ---
 
-
 ### Funnel & Cohorts
 
 * **Funnel:** touch → click → signup → trial → activation with drop-off percentages
@@ -180,35 +179,25 @@ A full web app to track DevRel activities, attribution, KPIs, and ROI across con
 ---
 
 ### **Developer Experience**
-- **Seed script**: `pnpm seed` creates sample org, initiatives (content, event, launch), campaigns, short links, contacts, companies, clicks, conversions, expenses, timelogs, metric snapshots.  
-- **PLAN.md**: Bullet build plan before coding.  
-- **README.md**: Setup, `.env` examples, dev commands for `/server` and `/web`, where uploads/outbox live, seed data.  
-- **DEMO.md**: 90-second narration + click path (dashboard → initiative ROI → switch attribution model → content calendar → event registration → public report).  
-- **MORNING_REPORT.md**: Shipped features, test results, commands, known limits, next steps.  
-- **CHANGELOG.md**: Notable changes.  
+* **Seed script**: `pnpm seed` creates sample org, initiatives (content, event, launch), campaigns, short links, contacts, companies, clicks, conversions, expenses, timelogs, metric snapshots.  
+* **PLAN.md**: Bullet build plan before coding.  
+* **README.md**: Setup, `.env` examples, dev commands for `/server` and `/web`, where uploads/outbox live, seed data.  
+* **DEMO.md**: 90-second narration + click path (dashboard → initiative ROI → switch attribution model → content calendar → event registration → public report).  
+* **MORNING_REPORT.md**: Shipped features, test results, commands, known limits, next steps.  
+* **CHANGELOG.md**: Notable changes.  
 
 ---
 
 ### **Non-negotiables**
-- Clean, responsive UI; light/dark toggle; accessible labels and focus states.  
-- Do not ask me questions; pick sensible defaults and document decisions in `MORNING_REPORT.md`.  
-- Keep endpoints and types consistent between `/shared` and both apps.  
+* Clean, responsive UI; light/dark toggle; accessible labels and focus states.  
+* Do not ask me questions; pick sensible defaults and document decisions in `MORNING_REPORT.md`.  
+* Keep endpoints and types consistent between `/shared` and both apps.  
 
 ---
 
 ### **Finish Condition**
-- Tests green.  
-- Seed script works.  
-- PDFs generate.  
-- Public pages live (events, short links, report).  
-- Core flows demoable end-to-end.  
-
-
-
-
-
-
-
-
-
-
+* Tests green.  
+* Seed script works.  
+* PDFs generate.  
+* Public pages live (events, short links, report).  
+* Core flows demoable end-to-end.  

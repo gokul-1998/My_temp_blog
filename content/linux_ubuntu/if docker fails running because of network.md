@@ -27,13 +27,13 @@ When you add `--dns 1.1.1.1`, Docker injects this IP address into the container'
 
 If you want **all** your Docker containers to use a specific public DNS server by default, you can configure the Docker daemon itself:
 
-1.  **Edit the Docker Daemon configuration file:**
+1. **Edit the Docker Daemon configuration file:**
 
     ```bash
     sudo nano /etc/docker/daemon.json
     ```
 
-2.  **Add or modify the `dns` entry** to include public DNS servers. If the file is empty, add the following:
+2. **Add or modify the `dns` entry** to include public DNS servers. If the file is empty, add the following:
 
     ```json
     {
@@ -41,7 +41,7 @@ If you want **all** your Docker containers to use a specific public DNS server b
     }
     ```
 
-3.  **Restart the Docker service** for the changes to take effect:
+3. **Restart the Docker service** for the changes to take effect:
 
     ```bash
     sudo systemctl restart docker

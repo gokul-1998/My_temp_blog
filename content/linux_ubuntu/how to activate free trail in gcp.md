@@ -1,4 +1,4 @@
-- open your email, go into the gcp free trail website, 
+- open your email, go into the gcp free trail website,
 - make sure to opt for individual account, and the name of the payment profile should be the same as the name in your bank account
 - use this link `https://cloud.google.com/free?utm_source=google&utm_medium=cpc&utm_campaign=japac-IN-all-en-dr-BKWS-all-core-trial-EXA-dr-1605216&utm_content=text-ad-none-none-DEV_m-CRE_644159077391-ADGP_Hybrid%20%7C%20BKWS%20-%20EXA%20%7C%20Txt%20~%20GCP_General_core%20brand_main-KWID_43700074766895886-kwd-6458750523&userloc_9040245-network_g&utm_term=KW_google%20cloud&gclid=CjwKCAiAlp2fBhBPEiwA2Q10D3pRy_pr1ZMm0_sp0Mfv7nw49hqfhdhyXvnwHJZDCP_2D3UN-E_EthoCC3cQAvD_BwE&gclsrc=aw.ds`
 - open the link in `incognito mode` also , the bank account on which you pay via upi should not have been added already in GCP

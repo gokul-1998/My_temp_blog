@@ -1,2 +1,2 @@
-- https://chatgpt.com/share/691318b5-6cec-8011-aa19-aeab6a9d8cef
-- https://claude.ai/share/ca1afc11-a3db-423d-ae70-c1862936e03b
+- <https://chatgpt.com/share/691318b5-6cec-8011-aa19-aeab6a9d8cef>
+- <https://claude.ai/share/ca1afc11-a3db-423d-ae70-c1862936e03b>

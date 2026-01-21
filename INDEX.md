@@ -5,6 +5,7 @@ Wanted to create a blog website of my own, but am not finding enough time to cre
 ## Index
 
 ### Linux & Ubuntu
+
 - [00001 how to run java in unbuntu.md](./linux_ubuntu/00001%20how%20to%20run%20java%20in%20unbuntu.md)
 - [00002 how to enable oracle vm over ping.md](./linux_ubuntu/00002%20how%20to%20enable%20oracle%20vm%20over%20ping.md)
 - [00003  if you get an error saying that ssh key is too open.md](./linux_ubuntu/00003%20%20if%20you%20get%20an%20error%20saying%20that%20ssh%20key%20is%20too%20open.md)
@@ -36,6 +37,7 @@ Wanted to create a blog website of my own, but am not finding enough time to cre
 - [upgrade_node_and_npm_in_ubuntu.md](./linux_ubuntu/upgrade_node_and_npm_in_ubuntu.md)
 
 ### Git & GitHub
+
 - [add another user to gh auth.md](./git_github/add%20another%20user%20to%20gh%20auth.md)
 - [add google code assist to github.md](./git_github/add%20google%20code%20assist%20to%20github.md)
 - [create_git_repo_via_gh_cli.md](./git_github/create_git_repo_via_gh_cli.md)
@@ -56,6 +58,7 @@ Wanted to create a blog website of my own, but am not finding enough time to cre
 - [two git account in same laptop.md](./git_github/two%20git%20account%20in%20same%20laptop.md)
 
 ### FastAPI & Backend
+
 - [19hrs backend fastapi.md](./fastapi_backend/19hrs%20backend%20fastapi.md)
 - [class_based_fastapi_routes.md](./fastapi_backend/class_based_fastapi_routes.md)
 - [fastapi_sample_repos.md](./fastapi_backend/fastapi_sample_repos.md)
@@ -67,6 +70,7 @@ Wanted to create a blog website of my own, but am not finding enough time to cre
 - [venv to uv migration.md](./fastapi_backend/venv%20to%20uv%20migration.md)
 
 ### AI & LLM Tools
+
 - [convert_repo_to_llm_feed.md](./ai_tools/convert_repo_to_llm_feed.md)
 - [if ollama models are not visible in openwebui.md](./ai_tools/if%20ollama%20models%20are%20not%20visible%20in%20openwebui.md)
 - [make gemini give a commit message.md](./ai_tools/make%20gemini%20give%20a%20commit%20message.md)
@@ -75,6 +79,7 @@ Wanted to create a blog website of my own, but am not finding enough time to cre
 - [replit_prompt_template.md](./ai_tools/replit_prompt_template.md)
 
 ### Dev Environment
+
 - [How to activate venv in windows.md](./dev_environment/How%20to%20activate%20venv%20in%20windows.md)
 - [how to avoid build errors in nextjs deployment.md](./dev_environment/how%20to%20avoid%20build%20errors%20in%20nextjs%20deployment.md)
 - [How to set up code-server (vs code in browser).md](./dev_environment/How%20to%20set%20up%20code-server%20(vs%20code%20in%20browser).md)
@@ -83,10 +88,12 @@ Wanted to create a blog website of my own, but am not finding enough time to cre
 - [windsurf rules.md](./dev_environment/windsurf%20rules.md)
 
 ### Projects & CI/CD
+
 - [002_cicd_docker_flask_github_actions](./projects_cicd/002_cicd_docker_flask_github_actions)
 - [003_cicd_with_devzero](./projects_cicd/003_cicd_with_devzero)
 
 ### Miscellaneous
+
 - [asterisk and freepbx installation.md](./misc/asterisk%20and%20freepbx%20installation.md)
 - [DSA prep and tools and sites.md](./misc/DSA%20prep%20and%20tools%20and%20sites.md)
 - [get a free domain.md](./misc/get%20a%20free%20domain.md)

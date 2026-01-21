@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: "Technical Knowledge Base",
   description: "A collection of technical notes and tutorials",
   icons: {
-    icon: '/logo-light.png',
+    icon: '/logo-dark.png',
   },
 };
 

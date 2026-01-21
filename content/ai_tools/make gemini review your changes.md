@@ -1,6 +1,9 @@
 # step 1
+
 - `nano .git/hooks/pre-commit`
+
 # step 2 : paste the below content in the file
+
 ```
 #!/usr/bin/env python3
 
@@ -106,11 +109,15 @@ if __name__ == "__main__":
         sys.exit(1)
 
 ```
+
 # step 3
+
 - create a .env and add GOOGLE_API_KEY in it
 
 # step 4
+
 - `chmod +x .git/hooks/pre-commit`
 
 # step 5
+
 - `pip install google.generativeai`

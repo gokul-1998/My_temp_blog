@@ -1,5 +1,7 @@
 # note : gh needs to be installed via apt and not snap. if you install via snap it wont work
-- https://github.com/cli/cli/issues/4351
+
+- <https://github.com/cli/cli/issues/4351>
+
 ```bash
 # Remove old version
 sudo apt remove gh
@@ -19,7 +21,7 @@ sudo apt update
 sudo apt install gh
 ```
 
-- to uninstall if you installed via snap, 
+- to uninstall if you installed via snap,
 
 ```
  sudo apt remove gh
@@ -47,4 +49,3 @@ sudo apt update
 - logout of vscode github , and use `gh auth login`
 
 - now you can use `gh auth switch` to change the auths
-

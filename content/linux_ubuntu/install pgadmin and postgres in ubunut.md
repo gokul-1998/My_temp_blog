@@ -1,6 +1,7 @@
 # install pgadmin and postgres in ubunut.md
 
-- https://www.pgadmin.org/download/pgadmin-4-apt/
+- <https://www.pgadmin.org/download/pgadmin-4-apt/>
+
 ```
 #
 # Setup the repository
@@ -28,14 +29,14 @@ sudo apt install pgadmin4-web
 # Configure the webserver, if you installed pgadmin4-web:
 sudo /usr/pgadmin4/bin/setup-web.sh
 ```
+
 - `sudo apt-get install postgresql`
 - `sudo -u postgres psql postgres`
 - `ALTER USER postgres WITH PASSWORD 'password';`
 
-# the above one causes trouble, so use the below one, 
-https://medium.com/yavar/install-and-configure-postgresql-and-pgadmin-on-ubuntu-20-04-22-04-52c52c249b9e
-
+# the above one causes trouble, so use the below one
+<https://medium.com/yavar/install-and-configure-postgresql-and-pgadmin-on-ubuntu-20-04-22-04-52c52c249b9e>
 
 # to set up password to postgres
-  - https://stackoverflow.com/questions/12720967/how-can-i-change-a-postgresql-user-password
 
+- <https://stackoverflow.com/questions/12720967/how-can-i-change-a-postgresql-user-password>

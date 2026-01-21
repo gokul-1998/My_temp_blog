@@ -52,6 +52,7 @@ ubuntu@instance-20250824-0855:~$
 ```
 
 - `sudo nano /etc/nginx/sites-available/fastapi`
+
 ```
 server {
     listen 80;

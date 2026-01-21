@@ -1,1 +1,1 @@
-- https://github.com/apps/gemini-code-assist
+- <https://github.com/apps/gemini-code-assist>

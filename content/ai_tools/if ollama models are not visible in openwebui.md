@@ -31,18 +31,21 @@ Edit your Ollama service config so it listens on `0.0.0.0` instead of `127.0.0.1
    ```bash
    sudo systemctl edit ollama
    ```
+
 2. Add:
 
    ```
    [Service]
    Environment="OLLAMA_HOST=0.0.0.0"
    ```
+
 3. Reload and restart:
 
    ```bash
    sudo systemctl daemon-reload
    sudo systemctl restart ollama
    ```
+
 4. Verify:
 
    ```bash

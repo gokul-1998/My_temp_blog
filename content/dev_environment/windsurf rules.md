@@ -1,1 +1,1 @@
-- https://windsurf.com/editor/directory
+- <https://windsurf.com/editor/directory>
