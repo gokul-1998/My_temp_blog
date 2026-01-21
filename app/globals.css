@@ -106,7 +106,7 @@ header {
   top: 0;
   background: var(--nav-bg);
   backdrop-filter: blur(25px) saturate(200%);
-  z-index: 100;
+  z-index: 1000;
   border-bottom: 1px solid var(--glass-border);
 }
 
@@ -130,19 +130,23 @@ header {
 
 .nav-links {
   display: flex;
-  gap: 3rem;
+  gap: 2rem;
   align-items: center;
+  margin-left: auto;
 }
 
 .nav-link {
-  font-size: 0.9rem;
-  font-weight: 600;
+  font-size: 0.95rem;
+  font-weight: 500;
   color: var(--muted);
   transition: var(--transition);
+  padding: 0.5rem 0.75rem;
+  border-radius: 8px;
 }
 
 .nav-link:hover {
   color: var(--foreground);
+  background: var(--card-bg);
 }
 
 /* Hero Section */
@@ -168,6 +172,55 @@ header {
   max-width: 650px;
   font-weight: 400;
   line-height: 1.6;
+}
+
+/* Search Bar */
+.search-container {
+  margin: 2rem 0;
+  position: relative;
+  z-index: 10;
+}
+
+.search-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  max-width: 600px;
+}
+
+.search-icon {
+  position: absolute;
+  left: 1.25rem;
+  color: var(--muted);
+  pointer-events: none;
+}
+
+.search-input {
+  width: 100%;
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 14px;
+  padding: 1rem 1rem 1rem 3.5rem;
+  color: var(--foreground);
+  font-family: var(--font-main);
+  font-size: 1rem;
+  transition: var(--transition);
+  backdrop-filter: blur(10px);
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: var(--accent);
+  background: rgba(255, 255, 255, 0.08);
+  box-shadow: 0 0 0 4px var(--accent-glow);
+}
+
+.no-results {
+  padding: 4rem 0;
+  text-align: center;
+  color: var(--muted);
+  font-size: 1.25rem;
+  grid-column: 1 / -1;
 }
 
 /* Blog Grid & Cards */
@@ -266,13 +319,14 @@ header {
 
 .post-content p {
   margin-bottom: 1.75rem;
-  font-size: 1.2rem;
-  color: #ccc;
+  font-size: 1.15rem;
+  color: var(--muted);
   font-weight: 400;
+  line-height: 1.7;
 }
 
 [data-theme='light'] .post-content p {
-  color: #333;
+  color: #2d2d30;
 }
 
 .post-content pre {

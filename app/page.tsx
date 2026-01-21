@@ -1,6 +1,5 @@
 import { getAllPosts } from '@/lib/markdown';
-import Link from 'next/link';
-import { format } from 'date-fns';
+import BlogList from '@/components/BlogList';
 
 export default async function Home() {
   const posts = await getAllPosts();
@@ -14,20 +13,7 @@ export default async function Home() {
         </p>
       </section>
 
-      <div className="blog-grid">
-        {posts.map((post, index) => (
-          <Link
-            key={`${post.category}-${post.slug}`}
-            href={`/blog/${post.category}/${post.slug}`}
-            className="post-card animate"
-            style={{ animationDelay: `${index * 0.05}s` }}
-          >
-            <span className="post-category-tag">{post.category.replace('_', ' ')}</span>
-            <h2 className="post-title">{post.title}</h2>
-            <div className="post-date">{format(new Date(post.date), 'MMM dd, yyyy')}</div>
-          </Link>
-        ))}
-      </div>
+      <BlogList initialPosts={posts} />
     </div>
   );
 }
