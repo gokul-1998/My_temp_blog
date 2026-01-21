@@ -1,66 +1,33 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+import { getAllPosts } from '@/lib/markdown';
+import Link from 'next/link';
+import { format } from 'date-fns';
 
-export default function Home() {
+export default async function Home() {
+  const posts = await getAllPosts();
+
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className={styles.intro}>
-          <h1>To get started, edit the page.tsx file.</h1>
-          <p>
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+    <div className="container">
+      <div className="animate-in" style={{ padding: '6rem 0 2rem' }}>
+        <h1 style={{ fontSize: '4rem', marginBottom: '1rem' }}>Latest Notes</h1>
+        <p style={{ color: 'var(--muted)', fontSize: '1.25rem', maxWidth: '600px' }}>
+          My personal collection of technical guides, snippets, and deep dives.
+        </p>
+      </div>
+
+      <div className="blog-grid">
+        {posts.map((post, index) => (
+          <Link
+            key={`${post.category}-${post.slug}`}
+            href={`/blog/${post.category}/${post.slug}`}
+            className="post-card animate-in"
+            style={{ animationDelay: `${index * 0.1}s` }}
           >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className={styles.secondary}
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
+            <div className="post-category">{post.category.replace('_', ' ')}</div>
+            <h2 className="post-title">{post.title}</h2>
+            <div className="post-date">{format(new Date(post.date), 'MMMM dd, yyyy')}</div>
+          </Link>
+        ))}
+      </div>
     </div>
   );
 }

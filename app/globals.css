@@ -1,13 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@400;500;600;700&display=swap');
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #0a0a0c;
+  --foreground: #f0f0f2;
+  --accent: #3a86ff;
+  --accent-secondary: #8338ec;
+  --card-bg: rgba(255, 255, 255, 0.03);
+  --card-border: rgba(255, 255, 255, 0.08);
+  --muted: #888891;
+  --nav-bg: rgba(10, 10, 12, 0.8);
+  --font-main: 'Inter', sans-serif;
+  --font-heading: 'Outfit', sans-serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 html,
@@ -17,17 +26,11 @@ body {
 }
 
 body {
-  color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  color: var(--foreground);
+  font-family: var(--font-main);
+  line-height: 1.6;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
 }
 
 a {
@@ -35,8 +38,182 @@ a {
   text-decoration: none;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+/* Layout */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+header {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  background: var(--nav-bg);
+  backdrop-filter: blur(12px);
+  z-index: 100;
+  border-bottom: 1px solid var(--card-border);
+}
+
+.nav-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 800;
+  background: linear-gradient(135deg, var(--accent), var(--accent-secondary));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: var(--font-heading);
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-link {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--muted);
+  transition: color 0.2s;
+}
+
+.nav-link:hover {
+  color: var(--foreground);
+}
+
+/* Blog Components */
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 2rem;
+  padding: 4rem 0;
+}
+
+.post-card {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 16px;
+  padding: 2rem;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.post-card:hover {
+  transform: translateY(-8px);
+  border-color: var(--accent);
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.post-category {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--accent);
+  letter-spacing: 0.1em;
+  margin-bottom: 0.75rem;
+}
+
+.post-title {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  line-height: 1.4;
+}
+
+.post-date {
+  font-size: 0.85rem;
+  color: var(--muted);
+  margin-top: auto;
+}
+
+/* Post Content */
+.post-header {
+  padding: 6rem 0 4rem;
+  text-align: center;
+}
+
+.post-header h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.1;
+}
+
+.post-content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding-bottom: 8rem;
+}
+
+.post-content h2 {
+  margin: 3rem 0 1.5rem;
+  font-size: 2rem;
+}
+
+.post-content p {
+  margin-bottom: 1.5rem;
+  font-size: 1.125rem;
+  color: #c9c9d1;
+}
+
+.post-content pre {
+  background: #011627;
+  padding: 1.5rem;
+  border-radius: 12px;
+  overflow-x: auto;
+  margin: 2rem 0;
+  border: 1px solid var(--card-border);
+}
+
+.post-content code {
+  font-family: 'JetBrains Mono', 'Fira Code', monospace;
+  font-size: 0.9em;
+}
+
+.post-content ul,
+.post-content ol {
+  margin-bottom: 1.5rem;
+  padding-left: 1.5rem;
+}
+
+.post-content li {
+  margin-bottom: 0.5rem;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
   }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-in {
+  animation: fadeIn 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
