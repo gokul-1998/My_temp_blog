@@ -13,6 +13,9 @@ export default function ThemeToggle() {
         } else if (window.matchMedia('(prefers-color-scheme: light)').matches) {
             setTheme('light');
             document.documentElement.setAttribute('data-theme', 'light');
+        } else {
+            // Default to dark and ensure the attribute is set
+            document.documentElement.setAttribute('data-theme', 'dark');
         }
     }, []);
 
