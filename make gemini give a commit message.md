@@ -69,10 +69,8 @@ echo "$response" >&2  # Print raw response for debugging
 
 # Parse the response with jq
 echo "$response" | jq -r '.candidates[0].content.parts[0].text' 2>/dev/null
-
-
-
 ```
+-------------------------------------------------------------
 
 ```
 chmod +x ~/gemini.sh
