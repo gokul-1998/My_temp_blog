@@ -60,7 +60,7 @@ json_payload=$(jq -n --arg prompt "$prompt" \
 }')
 
 response=$(curl -s -X POST \
-  "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-lite:generateContent?key=${API_KEY}" \
+  "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${API_KEY}" \
   -H "Content-Type: application/json" \
   -d "$json_payload"
 )
@@ -69,13 +69,11 @@ echo "$response" >&2  # Print raw response for debugging
 
 # Parse the response with jq
 echo "$response" | jq -r '.candidates[0].content.parts[0].text' 2>/dev/null
-
-
+```
+-------------------------------------------------------------
 
 ```
-
-```
-chmod +x ~/gemini.sh`
+chmod +x ~/gemini.sh
 sudo apt update && sudo apt install jq
 jq --version
 ```
