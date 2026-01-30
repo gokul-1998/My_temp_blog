@@ -1,0 +1,3 @@
+- <https://github.com/pomponchik/cbfa>
+- <https://fastapi-utils.davidmontague.xyz/user-guide/class-based-views/>
+- <https://pypi.org/project/fastapi-class/3.4.0/>

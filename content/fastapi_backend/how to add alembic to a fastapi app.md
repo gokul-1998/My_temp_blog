@@ -1,0 +1,2 @@
+- `alembic init alembic`
+- <https://medium.com/@jamshidsadiqi25/alembic-integration-with-fast-api-fc992fb0e70b>

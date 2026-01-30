@@ -1,0 +1,2 @@
+- to install ffmpeg in windows <https://phoenixnap.com/kb/ffmpeg-windows>
+- to install node and npm in windows `winget install OpenJS.NodeJS`

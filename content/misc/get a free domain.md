@@ -1,0 +1,1 @@
+- <https://freedomain.one/Direct.sv?cmd=verifyDNS&domainname=yt-q-and-a.linkpc.net&actioncode=1>
