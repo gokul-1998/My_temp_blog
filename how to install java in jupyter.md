@@ -10,3 +10,5 @@ Steps:
 - <img width="963" height="223" alt="image" src="https://github.com/user-attachments/assets/608fac89-38e8-457c-a7f3-58b6208d01fa" />
 - <img width="985" height="195" alt="image" src="https://github.com/user-attachments/assets/7d4367e0-0c03-4713-9cb3-3480f88f467f" />
 - you should see java, and once you select java ,it should run
+
+- eg : https://github.com/gokul-1998/Java-May-2022/blob/main/hello_world.ipynb
