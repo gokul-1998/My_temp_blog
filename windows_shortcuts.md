@@ -1,0 +1,2 @@
+- Win + H -> voice to text typing
+- Win + V -> clip board
