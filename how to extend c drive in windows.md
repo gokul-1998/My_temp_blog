@@ -1,0 +1,3 @@
+- install partition assistant from  https://www.aomeitech.com/pa/download.html?utm_source=chatgpt.com
+- right click on the drive to extend, slide the slider
+- at last click on apply on the top left , it will restart 3 to 4 times, and done.
